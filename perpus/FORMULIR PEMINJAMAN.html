@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--MUHAMMAD FIKRI WIBOWO-->
+<!--K3520048-->
+
+<style>
+    *::after
+    *::before{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body {
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(rgb(44, 42, 40), rgb(34, 34, 175));
+        height: 100vh;
+    }
+    h2 {
+        color:rgb(214, 215, 233)
+    }
+    fieldset > legend {
+        margin-left: 0rem;
+        padding: 1rem;
+        font-size: 1rem;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    fieldset::before {
+        position: absolute;
+        content: '';
+        width: 1000vh;
+        height: 0;
+        top: 0;
+        left: 0;
+        border-width: 10px;
+        border-color: rgb(232, 248, 235);
+        border-style: solid;
+    }
+    fieldset{
+        margin-bottom: 1rem;
+    }
+    table{
+        margin-bottom: 1rem;
+        margin-left: 11rem;
+        width: 400px
+    }
+</style>
+<head>
+    <title>Formulir Peminjaman Buku</title>
+</head>
+<body text="white" >
+<from action="register.php" method="POST">
+<CENTER>
+<br>
+<h2>FORMULIR PEMINJAMAN BUKU PERPUSTAKAAN</h2>
+<fieldset>
+<legend align="center"><b>Data Peminjam</b></legend>
+<table>
+    <tr>
+        <td><label>Username   </label></td>
+        <td><input type="text" name="username"placeholder="Masukan Nama Anda"></td>
+    </tr>
+    <tr>
+        <td><label>Fakultas</label></td>
+        <td><select>
+            <option value="FKIP">FKIP</option>
+            <option value="FIB">FIB</option>
+            <option value="FEB">FEB</option>
+            <option value="FISIP">FISIP</option>
+            <option value="FH">FH</option>
+            <option value="FK">FK</option>
+            <option value="FMIPA">FMIPA</option>
+            <option value="FSRD">FSRD</option>
+        </select></td>
+
+    </tr>
+    <tr>
+        <td><label>NIM  </label></td>
+        <td><input type="text" name="NIM"placeholder="Masukan NIM Anda"></td>
+    </tr>
+</table>
+</fieldset>
+</CENTER>
+
+<CENTER>
+<fieldset>
+    <legend align="center"><b>Data Buku</b></legend>
+    <table>
+        <tr>
+            <td><label>Judul Buku</label></td>
+            <td><textarea name="judulbuku"></textarea></td>
+        </tr>
+
+        <tr>
+            <td><label>Tanggal Pinjam  </label></td>
+            <td><input type="date" name="TglLahir"></td>
+        </tr>
+    </table>
+    </fieldset>
+    <p>
+        <br><br>
+        <input type="submit" name="submit" value="Kirim"
+    </p>
+</CENTER>
+    
+</body>
+</html>

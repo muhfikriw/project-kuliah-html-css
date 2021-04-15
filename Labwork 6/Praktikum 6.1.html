@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    body {
+        background: rgb(240, 232, 217);
+    }
+    .static{
+        background: rgb(129, 54, 54);
+        left:100px;
+        width: 300px;
+        height: 1000px;
+        position: static;
+    }
+    .relative{
+        background: rgb(29, 66, 104);
+        left:100px;
+        width: 400px;
+        height: 200px;
+        position: relative;
+    }
+    .absolute{
+        background: rgb(102, 48, 119);
+        left:350px;
+        top:150px;
+        width: 300px;
+        height: 100px;
+        position: absolute;
+    }
+    .fixed{
+        background: rgb(56, 112, 75);
+        left:300px;
+        top:50px;
+        width: 200px;
+        height: 100px;
+        position: fixed;
+    }
+</style>
+<head>
+    <title>Praktikum 6.1</title>
+</head>
+<body>
+    <div class="static">elemen static.<br>nilai left 100px gak pengaruh</div>
+    <div class="relative">elemen relative.<br>nilai left 100px ngikuti alur</div>
+    <div class="absolute">elemen absolute.<br>Bisa diletakkan diman saja</div>
+    <div class="fixed">elemen fixed.<br>posisi tetap walau discrool</div>
+</body>
+</html>

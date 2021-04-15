@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--MUHAMMAD FIKRI WIBOWO-->
+<!--K3520048-->
+
+<style>
+    *::after
+    *::before{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body {
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: rgb(21, 34, 75);
+        background-image: url(perpus1.png);
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        background: size 30px;
+
+    }
+    h2 {
+        color:rgb(214, 215, 233)
+    }
+    fieldset > legend {
+        margin-left: 0rem;
+        padding: 1rem;
+        font-size: 1rem;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    fieldset::before {
+        position: absolute;
+        content: '';
+        width: 1000vh;
+        height: 0;
+        top: 0;
+        left: 0;
+        border-width: 10px;
+        border-color: rgb(214, 215, 233);
+        border-style: solid;
+    }
+    fieldset{
+        margin-bottom: 1rem;
+    }
+    table{
+        margin-bottom: 1rem;
+        margin-left: 13rem;
+        width: 500px
+    }
+</style>
+<head>
+    <title>Formulir Pendaftaran</title>
+</head>
+<body text="white" >
+<from action="register.php" method="POST">
+<CENTER>
+<br>
+<h2>FORMULIR PENDAFTARAN ANGGOTA PERPUSTAKAAN UNS</h2>
+<fieldset>
+<legend align="center"><b>Data Pendaftar</b></legend>
+<table>
+    <tr>
+        <td><label>Nama</label></td>
+        <td><input type="text" name="username"placeholder="Masukan Nama Anda"></td>
+    </tr>
+    <tr>
+        <td><label>Fakultas</label></td>
+        <td><select>
+            <option value="FKIP">FKIP</option>
+            <option value="FIB">FIB</option>
+            <option value="FEB">FEB</option>
+            <option value="FISIP">FISIP</option>
+            <option value="FH">FH</option>
+            <option value="FK">FK</option>
+            <option value="FMIPA">FMIPA</option>
+            <option value="FSRD">FSRD</option>
+        </select></td>
+
+    </tr>
+    <tr>
+        <td><label>NIM  </label></td>
+        <td><input type="text" name="NIM"placeholder="Masukan NIM Anda"></td>
+    </tr>
+    <tr>
+        <td><br></td>
+    </tr>
+    <tr>
+        <td><label>Tanggal Lahir</label></td>
+        <td><input type="date" name="TglLahir"></td>
+    </tr>
+    <tr>
+        <td><br></td>
+    </tr>
+    <tr>
+        <td rowspan="2" align="top center">Kelamin</td>
+        <td><label><input type="radio" name="tipe" value="male">LAKI</label></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><input type="radio" name="tipe" value="female">CEWE</label></td>
+    </tr>
+    <tr>
+        <td><br></td>
+    </tr>
+    <td><label>No. HP</label></td>
+    <td> <input type="text" name="nomerhp"placeholder="Masukan Nomor Hp Anda"></td>
+</tr>
+    <tr>
+        <td><label>Alamat</label></td>
+        <td><textarea name="alamat"></textarea></td>
+    </tr>
+</table>
+<p>
+    <input type="submit" name="submit" value="Kirim"
+</p>
+</fieldset>
+</CENTER>
+</body>
+</html>

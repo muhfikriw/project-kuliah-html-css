@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    body {
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(rgb(44, 42, 40), rgb(34, 34, 175));
+        height: 100vh;
+    }
+p {
+    color:rgb(214, 215, 233)
+}
+.kotak {
+    background-color:rgb(10, 27, 58);
+
+}
+</style>
+<head>
+    <title>Latihan 3</title>
+</head>
+<body text="white" >
+    <div class="kotak">
+        <from action="register.php" method="POST">
+            <fieldset>
+                <legend> Form Registrasi Peserta Didik</legend>
+                <p>
+                    <label>Username  : </label>
+                    <input type="text" name="username"placeholder="Masukan Nama Anda">
+                </p>
+
+                <p>
+                    <label>Password  : </label>
+                    <input type="password" name="password"placeholder="Masukan Pasword Anda">
+                </p>
+
+                <p>
+                    <label>Tanggal Lahir : </label>
+                    <input type="date" name="TglLahir">
+                </p>
+
+                <p>
+                    <label>Jenis Kelamin :</label> <BR>
+                    <label><input type="radio" name="tipe" value="male">LAKI</label> <BR>
+                    <label><input type="radio" name="tipe" value="female">CEWE</label>
+                </p>
+
+                <p>
+                    <label>Tipe Akun :</label> <BR>
+                    <select>
+                        <option value="Trial">Njileh 7 dino</option>
+                        <option value="Subs">Berlangganan</option>
+                        <option value="Premium">Premium</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label>Informasi Tambahan :</label> <BR>
+                    <textarea name="info"></textarea>
+                </p>
+
+                <p>
+                    <input type="submit" name="submit" value="Kirim"
+                </p>
+            </fieldset>
+        </from>
+    </div>
+</body>
+</html>
